@@ -18,7 +18,7 @@ if (document.getElementById('myCheckBox').checked) {
         Password: myPassword,
         RememberMe: rEqual
     });
-
+    
 //If username or password are empty - error message as alert.
 
     if(myUsername.length === 0 || myPassword.length === 0) {
