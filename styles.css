@@ -6,7 +6,7 @@ body {
     overflow: hidden;
 }
 
-#container {
+.container {
     animation: fadeinout 0.5s linear 1 forwards;
     margin: auto;
     text-align: center;
@@ -34,7 +34,7 @@ body {
     border: hidden;
     border-radius: 150px;
     background-image: linear-gradient(to right, rgb(253, 211, 211), rgb(187, 187, 247));
-    margin-top: 0px;
+    margin-top: 15px;
     transition-duration: 0.2s;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 #myCheckBox {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #myCheckBox:hover {
@@ -89,6 +89,7 @@ h1 {
 
 #socialMedia {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
 }
 
 #circle1 {
