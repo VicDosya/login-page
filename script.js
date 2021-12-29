@@ -7,7 +7,7 @@ document.getElementById("buttonLogin").onclick = function () {
     let loginData = {
         username: myUsername,
         password: myPassword,
-        rememberme: rememberMe
+        rememberMe
     }
 
     //print in console the data as an object.
