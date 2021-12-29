@@ -1,27 +1,22 @@
 //Clicking the button will console log the data username, password and checkbox as an object
-document.getElementById("buttonLogin").onclick = function() {
+document.getElementById("buttonLogin").onclick = function () {
 
     let myUsername = document.getElementById("myUsername").value;
     let myPassword = document.getElementById("myPassword").value;
+    let rememberMe = document.getElementById('myCheckBox').checked;
+    let loginData = {
+        username: myUsername,
+        password: myPassword,
+        rememberMe
+    }
 
-// if checkbox is checked, print true, if unchecked - false.
+    //print in console the data as an object.
 
-    let rEqual = "false";
-if (document.getElementById('myCheckBox').checked) {
-    rEqual = "true";
-}
+    console.log(loginData);
 
-//print in console the data as an object.
+    //If username or password are empty - error message as alert.
 
-    console.log({
-        Username: myUsername,
-        Password: myPassword,
-        RememberMe: rEqual
-    });
-    
-//If username or password are empty - error message as alert.
-
-    if(myUsername.length === 0 || myPassword.length === 0) {
+    if (myUsername.length === 0 || myPassword.length === 0) {
         alert("Please enter your username and password correctly.");
     }
 }

@@ -6,7 +6,7 @@ body {
     overflow: hidden;
 }
 
-#container {
+.container {
     animation: fadeinout 0.5s linear 1 forwards;
     margin: auto;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-#logInHeader{
+.logInHeader{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #buttonLogin {
@@ -34,7 +34,7 @@ body {
     border: hidden;
     border-radius: 150px;
     background-image: linear-gradient(to right, rgb(253, 211, 211), rgb(187, 187, 247));
-    margin-top: 0px;
+    margin-top: 15px;
     transition-duration: 0.2s;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 #myCheckBox {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 #myCheckBox:hover {
@@ -83,22 +83,20 @@ h1 {
     font-weight: bolder;
 }
 
-#paragraphText {
+.paragraphText {
     font-size: 18px;
 }
 
-#socialMedia {
+.socialMedia {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
 }
 
-#circle1 {
+.circle {
     font-weight: bold;
     font-size: 25px;
     color: white;
-    text-align: center;
     line-height: 50px;
-    float: left;
-    margin-left: 40px;
     background: lightblue;
     border-radius: 50%;
     width: 50px;
@@ -106,61 +104,25 @@ h1 {
     box-shadow: 2px 2px 5px grey;
 }
 
-#circle2 {
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    margin: auto;
-    float: right;
-    margin-right: 40px;
-    background: rgb(173, 230, 176);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 2px 2px 5px grey;
-}
-#circle3 {
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    float: center;
-    margin: auto;
-    background: rgb(230, 173, 173);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 2px 2px 5px grey;
-}
-
-#circle1, #circle2, #circle3:hover {
+.circle:hover {
     cursor: pointer;
 }
 
-#circle1:active {
-    cursor: pointer;
-    text-align: center;
-    width: 49px;
-    height: 49px;
+.circlesContainer {
+    display: inline-flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-top: 5px;
 }
 
-#circle2:active {
-    cursor: pointer;
-    text-align: center;
-    width: 49px;
-    height: 49px;
+.circle:nth-of-type(1) {
+    background: rgb(131, 224, 255);
 }
 
-#circle3:active {
-    cursor: pointer;
-    text-align: center;
-    width: 49px;
-    height: 49px;
+.circle:nth-of-type(2) {
+    background: rgb(152, 255, 166);
 }
 
-#circles {
-    margin-top: 20px;
+.circle:nth-of-type(3) {
+    background: rgb(255, 152, 152);
 }
