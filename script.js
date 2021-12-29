@@ -5,9 +5,9 @@ document.getElementById("buttonLogin").onclick = function () {
     let myPassword = document.getElementById("myPassword").value;
     let rememberMe = document.getElementById('myCheckBox').checked;
     let loginData = {
-        Username: myUsername,
-        Password: myPassword,
-        RememberMe: rememberMe
+        username: myUsername,
+        password: myPassword,
+        rememberme: rememberMe
     }
 
     //print in console the data as an object.

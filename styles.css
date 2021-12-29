@@ -83,23 +83,20 @@ h1 {
     font-weight: bolder;
 }
 
-#paragraphText {
+.paragraphText {
     font-size: 18px;
 }
 
-#socialMedia {
+.socialMedia {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
 }
 
-#circle1 {
+.circle {
     font-weight: bold;
     font-size: 25px;
     color: white;
-    text-align: center;
     line-height: 50px;
-    float: left;
-    margin-left: 40px;
     background: lightblue;
     border-radius: 50%;
     width: 50px;
@@ -107,61 +104,13 @@ h1 {
     box-shadow: 2px 2px 5px grey;
 }
 
-#circle2 {
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    margin: auto;
-    float: right;
-    margin-right: 40px;
-    background: rgb(173, 230, 176);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 2px 2px 5px grey;
-}
-#circle3 {
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    float: center;
-    margin: auto;
-    background: rgb(230, 173, 173);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 2px 2px 5px grey;
-}
-
-#circle1, #circle2, #circle3:hover {
+.circle:hover {
     cursor: pointer;
 }
 
-#circle1:active {
-    cursor: pointer;
-    text-align: center;
-    width: 49px;
-    height: 49px;
-}
-
-#circle2:active {
-    cursor: pointer;
-    text-align: center;
-    width: 49px;
-    height: 49px;
-}
-
-#circle3:active {
-    cursor: pointer;
-    text-align: center;
-    width: 49px;
-    height: 49px;
-}
-
-#circles {
-    margin-top: 20px;
+.circlesContainer {
+    display: inline-flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-top: 5px;
 }
